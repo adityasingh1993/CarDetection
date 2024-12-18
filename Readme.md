@@ -8,6 +8,8 @@ For class imabalance I have used Albumenations library for generating augmented 
 I have used collab for training the model
 All the codes are in `Digit_Yolov11_ModelTrain.ipynb`
 
+Training metadata: https://drive.google.com/drive/folders/1-QTh5iMzQlgjoPjkU7goDpiu-hQmZ8Lh?usp=sharing
+
 # Running The Containerize code
 1. Ensure Docker is installed, if not install these
     * pip install --upgrade pip
