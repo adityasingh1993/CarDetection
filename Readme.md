@@ -18,7 +18,7 @@ All the codes are in `Digit_Yolov11_ModelTrain.ipynb`
 
     
     
-2. Navigate To carDetection-Containerize:
+2. Navigate To `carDetection-Containerize/CarDetection`:
     * if docker is installed
         * In terminal run `docker build -t car .`
         * `docker run -p 5005:5005 --name car car`
