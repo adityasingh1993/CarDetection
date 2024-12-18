@@ -6,6 +6,11 @@ try:
     os.makedirs("output")
 except:
     pass
+
+# change below two param as per your environment
+url="http://172.16.0.178:5005/detect"
+filename="00013_aug.jpg"
+
 def annotation(name,img,x1,y1,x2,y2,cls,conf):
     position=(x1,y1)
     font=cv2.FONT_HERSHEY_SIMPLEX
@@ -18,12 +23,12 @@ def annotation(name,img,x1,y1,x2,y2,cls,conf):
     
 
 
-filename="00013_aug.jpg"
+
 image=cv2.imread(filename)
 # print(image)
 _,buffer=cv2.imencode(".jpg",image)
 image64=base64.b64encode(buffer).decode("utf-8")
-url="http://172.16.0.178:5005/detect"
+
 response=requests.post(url,json={"image":image64,"image_name":filename})
 data=response.json()["data"]
 print(data)
