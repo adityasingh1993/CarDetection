@@ -33,7 +33,7 @@ Training metadata: https://drive.google.com/drive/folders/1-QTh5iMzQlgjoPjkU7goD
     * In `test.py` change the url and filename and run `python test.py`
     * Output will be save in `test/output`
 
-# For Cpu based  ONNX Model and TFLite Model for mobilr
+# For Cpu based  ONNX Model and TFLite Model for mobile
 1. You can navigate to mobile_or_cpu, and can use `best.onnx` for cpu
 2. For mobile you can use `best_saved_model`, it have tflite model for mobile
 
